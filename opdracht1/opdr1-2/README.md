@@ -26,17 +26,23 @@ Problemen:
 
 Oplossingen:
 1. Per image wordt nu naast een `<img>` src ook een `<img>` alt gerendert.
-  Code voor: `thumbnail: {
+  Code voor:
+  ```
+  thumbnail: {
     src: function(){
       return this.thumbnail;
     }
     }
-  }`
-  code na: `thumbnail: {
+  }
+  ```
+  Code na:
+  ```
+  thumbnail: {
     src: function(){
       return this.thumbnail;
     },
     alt: function(){
       return "Thumbnail afbeelding van ${this.character}
     }
-  }`
+  }
+  ```
