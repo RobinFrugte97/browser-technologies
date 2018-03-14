@@ -32,7 +32,6 @@ Oplossingen:
     src: function(){
       return this.thumbnail;
     }
-    }
   }
   ```
   Code na:
