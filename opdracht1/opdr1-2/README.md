@@ -41,7 +41,7 @@ Oplossingen:
       return this.thumbnail;
     },
     alt: function(){
-      return "Thumbnail afbeelding van ${this.character}
+      return "Thumbnail afbeelding van ${this.character}"
     }
   }
   ```
