@@ -1,6 +1,12 @@
+@font-face {
+  font-family: americanCaptain;
+  src: url('../static/AmericanCaptain.ttf');
+  font-display: swap;
+}
+
 body {
   position: relative;
-  font-family: helvetica;
+  font-family: americanCaptain, helvetica, sans-serif;
   background-color: white;
   min-width: 100%;
   min-height: 100%;
@@ -75,10 +81,12 @@ a {
   text-align: center;
   font-size: 1.5em;
   color:white;
+  outline: 0;
 }
 
 img {
   object-fit: contain;
+  transition: .2s;
 }
 
 ul {
@@ -120,6 +128,10 @@ header img {
 
 .character {
   color: black;
+  padding-left: .5em;
+  padding-top: .25em;
+  padding-bottom: .25em;
+  font-size: 1.2em;
 }
 
 .name {
@@ -134,11 +146,22 @@ header img {
 
 #characterPage {
   background-color: rgba(0,0,0,.3);
-    margin: 2em;
-    width: 33%;
-    top: 50%;
-    margin-left: 50%;
-    transform: translate(-50%);
+  margin: 2em;
+  width: 33%;
+  top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+#characters>div:focus-within img {
+  transform: scale(1.025);
+}
+
+#characters>div:focus-within li {
+  background: linear-gradient(233deg, #ff2020, #f2ff40);
+  background-size: 400% 400%;
+  animation: AnimationName 10s ease infinite;
+  color: white;
 }
 
 #wrapper {

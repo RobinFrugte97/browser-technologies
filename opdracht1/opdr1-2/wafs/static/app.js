@@ -145,6 +145,12 @@
           thumbnail: {
             src: function(){
               return this.thumbnail;
+            },
+            alt: function(){
+              return `Thumbnail afbeelding van ${this.character}`
+            },
+            title: function(){
+              return `Thumbnail afbeelding van ${this.character}`
             }
           }
         }
@@ -162,6 +168,12 @@
           heroImage: {
             src: function(){
               return this.heroImage;
+            },
+            alt: function(){
+              return `Grote afbeelding van ${this.character}`
+            },
+            title: function(){
+              return `Grote afbeelding van ${this.character}`
             }
           }
         }
