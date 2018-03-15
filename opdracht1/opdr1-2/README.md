@@ -66,7 +66,7 @@ De site heeft een aantal verschillende kleuren.
 
 De site is goed te gebruiken in zwart-wit:
 
-![Site in zwart-wit]()
+![Site in zwart-wit](https://github.com/RobinFrugte97/browser-technologies/blob/master/opdracht1/opdr1-2/screenshots/blackandwhite.png)
 
 ### Breedband internet
 De site is bijna geheel gebaseerd rond de Marvel API.
