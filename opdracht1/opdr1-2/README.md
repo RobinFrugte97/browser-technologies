@@ -76,7 +76,7 @@ De site heeft een aantal verschillende kleuren, dankzij de vele verschillende af
 
 De site is goed te gebruiken in zwart-wit.
 
-![Zwart-wit](blackandwhite2.png)
+![Zwart-wit](/screenshots/blackandwhite2.png)
 
 In de toekomst wil ik testen of de site te gebruiken is voor kleurenblinden. Om dit te checken met bijvoorbeeld een browser extentie, moet ik de site online zetten. De Marvel API werkt dat op het moment een beetje tegen.
 
@@ -84,7 +84,7 @@ In de toekomst wil ik testen of de site te gebruiken is voor kleurenblinden. Om 
 ### Screenreader
 Ik heb de site getest met een screenreader. De gebruikte screenreader heet [NVDA](https://www.nvaccess.org/). De reader leest per character de afbeeldingen en de naam van het character.
 
-![reader](screenreader.png)
+![reader](/screenshots/screenreader.png)
 
 ### Breedband internet
 De site is bijna geheel gebaseerd rond de Marvel API.
