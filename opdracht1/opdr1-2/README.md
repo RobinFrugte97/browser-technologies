@@ -120,3 +120,5 @@ Problemen:
 
 Oplossingen:
 1. Duidelijke focus-states toegevoegd aan alle elementen in de site die een functionaliteit hebben.
+
+![focusstate](https://github.com/RobinFrugte97/browser-technologies/blob/master/opdracht1/opdr1-2/screenshots/focus-state.png)
