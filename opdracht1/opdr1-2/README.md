@@ -60,6 +60,8 @@ Oplossingen:
 1. Helvetica toegevoegd als fallback font. Als fallback daarop een sans-serif font.
 `font-family: americanCaptain, helvetica, sans-serif;`
 
+![fontcode](https://github.com/RobinFrugte97/browser-technologies/blob/master/opdracht1/opdr1-2/screenshots/fontcode.png)
+
 
 ### JavaScript
 De website werkt niet zonder JavaScript. Zonder JavaScript zul je niet verder komen dan de loading spinner.
