@@ -4,6 +4,9 @@
 Ik ga progressive enhancement toepassen op mijn wafs site. Hierbij ga ik stap voor stap door 9 belangrijke features heen om te checken of mijn site "progressive enhanced" genoeg is.
 
 ### WAFS site
+
+[De site](https://robinfrugte97.github.io/browser-technologies/opdracht1/opdr1-2/wafs/index.html)
+
 Mijn Web App From Scratch site gaat over Marvel superheroes. Er is een overzicht van characters met elk een detail pagina. Op een detail pagina heb je een grotere afbeelding en kun je zien in welke comic het desbetreffende character in voor komt.
 
 ### 9 features
@@ -124,3 +127,15 @@ Oplossingen:
 1. Duidelijke focus-states toegevoegd aan alle elementen in de site die een functionaliteit hebben.
 
 ![focusstate](https://github.com/RobinFrugte97/browser-technologies/blob/master/opdracht1/opdr1-2/screenshots/focus-state.png)
+
+
+### Devicelab
+Ik heb in het devicelab mijn site op een aantal devices getest:
+
+![](https://github.com/RobinFrugte97/browser-technologies/blob/master/opdracht1/opdr1-2/screenshots/screenshot1.jpg)
+
+![](https://github.com/RobinFrugte97/browser-technologies/blob/master/opdracht1/opdr1-2/screenshots/screenshot2.jpg)
+
+![](https://github.com/RobinFrugte97/browser-technologies/blob/master/opdracht1/opdr1-2/screenshots/screenshot3.jpg)
+
+Zoals je kunt zien doet de site het maar op een van de devices. Dit ligt waarschijnlijk aan het gebrek aan JavaScript ondersteuning van de devices. Ik zou standaard content in de html kunnen plaatsen en de loader weghalen.
