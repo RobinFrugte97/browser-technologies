@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <title>Carousel</title>
+
+  </head>
+  <body>
+    <style>
+      main {
+        margin: 0;
+        margin-top: 5em;
+        position: relative;
+        overflow: hidden;
+        height: 720px;
+        width: 1280px;
+        transform: translate(25%);
+      }
+
+      li {
+        list-style: none;
+      }
+
+      img {
+        display: none;
+      }
+
+      #een {
+        position: absolute;
+        background-image: url("images/1.jpg");
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        transform: translateX(0%);
+      }
+
+      #twee {
+        position: absolute;
+        background-image: url("images/2.jpg");
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        transform: translateX(100%);
+      }
+
+      #drie {
+        position: absolute;
+        background-image: url("images/3.jpg");
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        transform: translateX(200%);
+      }
+
+      #vier {
+        position: absolute;
+        background-image: url("images/4.jpg");
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        transform: translateX(300%);
+      }
+
+      #vijf {
+        position: absolute;
+        background-image: url("images/5.jpg");
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        transform: translateX(400%);
+      }
+
+      .carousel_image {
+        width: 1280px;
+        height: 720px;
+        display: inline-block;
+        position: relative;
+        transition: .3s;
+      }
+
+      .image_selector {
+        position: relative;
+        z-index: 9999;
+        top: 90%;
+        left: 47%;
+      }
+
+      .image_selector:nth-of-type(1):checked ~ .image_container {
+        transform: translateX(0%);
+      }
+
+      .image_selector:nth-of-type(2):checked ~ .image_container {
+        transform: translateX(-100%);
+      }
+
+      .image_selector:nth-of-type(3):checked ~ .image_container {
+        transform: translateX(-200%);
+      }
+
+      .image_selector:nth-of-type(4):checked ~ .image_container {
+        transform: translateX(-300%);
+      }
+
+      .image_selector:nth-of-type(5):checked ~ .image_container {
+        transform: translateX(-400%);
+      }
+
+      .image_container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        transition: .3s;
+      }
+
+    </style>
+    <main>
+      <input type="radio" class="image_selector" name="selector" checked="checked">
+      <input type="radio" class="image_selector" name="selector">
+      <input type="radio" class="image_selector" name="selector">
+      <input type="radio" class="image_selector" name="selector">
+      <input type="radio" class="image_selector" name="selector">
+      <div class="image_container">
+        <li id="een" class="carousel_image">
+          <img src="images/1.jpg" alt="">
+        </li>
+        <li id="twee" class="carousel_image">
+          <img src="images/2.jpg" alt="">
+        </li>
+        <li id="drie" class="carousel_image">
+          <img src="images/3.jpg" alt="">
+        </li>
+        <li id="vier" class="carousel_image">
+          <img src="images/4.jpg" alt="">
+        </li>
+        <li id="vijf" class="carousel_image">
+          <img src="images/5.jpg" alt="">
+        </li>
+      </div>
+    </main>
+  </body>
+</html>
