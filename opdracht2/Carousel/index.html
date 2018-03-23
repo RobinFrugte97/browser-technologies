@@ -70,6 +70,22 @@
         transform: translateX(400%);
       }
 
+      #image_previews {
+        height: 144px;
+        display: flex;
+        flex-direction: row;
+        width: 1280px;
+        position: absolute;
+        margin-top: 35em;
+      }
+
+      #image_previews img {
+        display: block;
+        width: 256px;
+        height: 144px;
+        z-index: 10000;
+      }
+
       .carousel_image {
         width: 1280px;
         height: 720px;
@@ -125,21 +141,46 @@
       <input type="radio" class="image_selector" name="selector">
       <div class="image_container">
         <li id="een" class="carousel_image">
-          <img src="images/1.jpg" alt="">
+          <img class="imagepreview" src="images/1.jpg" alt="">
         </li>
         <li id="twee" class="carousel_image">
-          <img src="images/2.jpg" alt="">
+          <img class="imagepreview" src="images/2.jpg" alt="">
         </li>
         <li id="drie" class="carousel_image">
-          <img src="images/3.jpg" alt="">
+          <img class="imagepreview" src="images/3.jpg" alt="">
         </li>
         <li id="vier" class="carousel_image">
-          <img src="images/4.jpg" alt="">
+          <img class="imagepreview" src="images/4.jpg" alt="">
         </li>
         <li id="vijf" class="carousel_image">
-          <img src="images/5.jpg" alt="">
+          <img class="imagepreview" src="images/5.jpg" alt="">
         </li>
       </div>
+      <div id="image_previews">
+
+      </div>
     </main>
+    <script>
+      (function() {
+        if (document.querySelectorAll) {
+          var carouselImages = document.getElementsByClassName('imagepreview');
+          var imagePreviewsDiv = document.getElementById('image_previews');
+          var radioButtons = document.querySelectorAll('input');
+          for (let i = 0; i < radioButtons.length; i++) {
+            radioButtons[i].setAttribute("Style", "opacity: 0;")
+          }
+          for (let i = 0; i < carouselImages.length; i++) {
+            const img = document.createElement('img');
+            img.src = carouselImages[i].src;
+            imagePreviewsDiv.appendChild(img);
+            carouselImages[i].setAttribute("Style", "opacity: .7;")
+            img.addEventListener('click', function(){
+              radioButtons[i].checked = true;
+              carouselImages[i].setAttribute("Style", "opacity: 1;")
+            })
+          }
+        }
+      })()
+    </script>
   </body>
 </html>
