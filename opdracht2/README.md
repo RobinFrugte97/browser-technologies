@@ -1,19 +1,67 @@
-# Browser Technologies
-//Robuuste, toegankelijke websites leren bouwen … 
+## FAQ
 
-## Opdracht 2 - 1, 2, 3 Feature Detectie
-Zoek uit HTML, CSS & JS per onderwerp 2 voor jou nieuwe features om te onderzoeken en fallback voor te bouwen. Gebruik html5test.com, css3test.com en kangax.github.io/compat-table/es6/
+### HTML only
 
-- Per feature: Zoek uit hoe je deze kunt testen. Verzamel uitleg en artikelen. Bouw een (kleine) progressive enhanced demo (zonder extra tools, gewoon in 1 HTML file, zo simpel mogelijk). Test de feature (en fallback) op verschillende browsers en het device lab.Let op: Gebruik van polyfills is niet toegestaan.
-- Post je 6 afzonderlijke demo’s op GitHub met uitleg in een README file. Wat is de feature, welke browsers/devices ondersteunen deze wel/niet, hoe zorg je dat de fallback nuttig is?
+The user is still able to read the content. The anchor links still work in every browser.
 
-criteria
-- 6 features zijn onderzocht en er is een demo gemaakt.
-- De code staat in een repository op GitHub.
-- Een Readme is toegevoegd met, per feature:
--		Een beschrijving van de feature.
--		Bronnen van uitleg en gebruikte artikelen.
--		Welke browsers/devices ondersteunen deze wel/niet.
--		Een beschrijving hoe de fallback werkt.
+![ChromeHTML]()
 
- 
+### CSS added
+
+CSS adds general styling to group questions and answers by topic. It also makes the navigation menu fixed to the side.
+smooth scroll is added to enhance the experience when clicking in the navigation menu.
+
+![ChomeCSS]()
+
+IE problem encounters:
+
+- The smooth scroll does not work in Internet Explorer.
+
+- The styling of the Q&A section messes up in Internet Explorer
+
+![IEMessup]()
+
+Fixes:
+
+- Added `display: block;` to the element containing all the Q&A elements. This fixes the IE styling mess-up;
+
+![IEMessupCode]()
+
+## Carousel
+
+### HTML only
+
+In HTML the carousel falls back to a simple column of images with an `<img>` tag.
+
+![]()
+
+### CSS added
+
+CSS makes it a carousel. The radio buttons control which image is shown. The images ease in and out. The `<img>` are hidden and the images are displayed as a background-image in CSS.
+
+![]()
+
+Problems encountered:
+
+- Internet explorer.
+
+### JS added
+
+JavaScript adds a preview of all images along the bottom of the carousel. The images replace the radio buttons in controlling which image is shown when clicked.
+
+I check whether the browser uses `querySelectorAll`:
+
+![CarouselCode]()
+
+If the browser does not support it, the JavaScript does not continue.
+In the future I would like to add an `else` to that `if` to check whether the browser uses, for example `getElementsByClassName`.
+
+![]()
+
+Problems encountered:
+
+- Internet explorer. It does not support `querySelectorAll`.
+
+Fixes:
+
+- The script does not continue if the browser does not support `querySelectorAll`.
