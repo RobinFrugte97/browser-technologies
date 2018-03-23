@@ -1,6 +1,6 @@
 ## FAQ
 
-Pages: [](https://robinfrugte97.github.io/browser-technologies/opdracht2/FAQ/)
+[Pages](https://robinfrugte97.github.io/browser-technologies/opdracht2/FAQ/)
 
 ### HTML only
 
@@ -31,7 +31,7 @@ Fixes:
 
 ## Carousel
 
-Pages: [](https://robinfrugte97.github.io/browser-technologies/opdracht2/Carousel/)
+[Pages](https://robinfrugte97.github.io/browser-technologies/opdracht2/Carousel/)
 
 ### HTML only
 
