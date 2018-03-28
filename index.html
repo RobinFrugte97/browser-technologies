@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <title>contactlist</title>
+  </head>
+  <body id="a">
+    <style>
+    * {
+      scroll-behavior: smooth;
+    }
+
+      body {
+        font-family: helvetica, sans-serif;
+      }
+
+      header {
+        width: 100%;
+        height: 3em;
+        background-color: white;
+        text-align: center;
+      }
+
+      h2 {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        margin: 0;
+        margin-top: 2em;
+        padding: .5em 0;
+      }
+
+      main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 100em;
+      }
+
+      input {
+        padding: .5em .3em;
+        width: 70%;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        align-items: center;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 75%;
+      }
+
+      details {
+        margin-top: 1em;
+        margin-left: .5em;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: sticky;
+        top: 6em;
+        margin-left: 2em;
+        height: 85%;
+        height: 85vh;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      #inputBackground {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 99;
+        padding: 1em 0;
+        display: none;
+      }
+
+      #contactSearch {
+
+      }
+    </style>
+    <header>
+      <h1>Contacts</h1>
+
+    </header>
+    <div id="inputBackground">
+      <input type="search" id="contactSearch" name="" value="" placeholder="Search for a contact..">
+    </div>
+    <main>
+      <div>
+        <section>
+          <h2>A</h2>
+          <details>
+            <summary>Anne Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Arnold Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Aziz de Boer</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="b">
+          <h2>B</h2>
+          <details>
+            <summary>Bert Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Bob Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Bram de Boer</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="c">
+          <h2>C</h2>
+          <details>
+            <summary>Cas Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Claar Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Coos de Boer</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="d">
+          <h2>D</h2>
+          <details>
+            <summary>Derk Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Dirk Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Dominiek de Boer</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="e">
+          <h2>E</h2>
+          <details>
+            <summary>Ed Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Erik Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Eva de Boer</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="f">
+          <h2>F</h2>
+          <details>
+            <summary>Fernando Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Frank Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Fred de Boer</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="g">
+          <h2>G</h2>
+          <details>
+            <summary>Gee Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Gert Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Greet de Boer</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="h">
+          <h2>H</h2>
+          <details>
+            <summary>Harry Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Henk Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Hord de Boer</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="i">
+          <h2>I</h2>
+          <details>
+            <summary>Ido Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Ivo Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="j">
+          <h2>J</h2>
+          <details>
+            <summary>Jan Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Joost Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="k">
+          <h2>K</h2>
+          <details>
+            <summary>Kas Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Koop Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="l">
+          <h2>L</h2>
+          <details>
+            <summary>Lars Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Lies Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="m">
+          <h2>M</h2>
+          <details>
+            <summary>Mark Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Mitch Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="N">
+          <h2>N</h2>
+          <details>
+            <summary>Naz Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Nico Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="o">
+          <h2>O</h2>
+          <details>
+            <summary>Ollie Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Oscar Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="p">
+          <h2>P</h2>
+          <details>
+            <summary>Pascal Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Peter Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="q">
+          <h2>Q</h2>
+        </section>
+        <section id="r">
+          <h2>R</h2>
+          <details>
+            <summary>Robin Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Roos Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="s">
+          <h2>S</h2>
+          <details>
+            <summary>Stan Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Steef Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="t">
+          <h2>T</h2>
+          <details>
+            <summary>Tarik Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Tim Slager</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="u">
+          <h2>U</h2>
+        </section>
+        <section id="v">
+          <h2>V</h2>
+          <details>
+            <summary>Vince Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="w">
+          <h2>W</h2>
+          <details>
+            <summary>Willem Bakker</summary>
+            <img src="" alt="">
+            <ul>
+              <li>Mobiel:</li>
+              <li>Werk:</li>
+              <li>Email:</li>
+            </ul>
+          </details>
+        </section>
+        <section id="x">
+          <h2>X</h2>
+        </section>
+        <section id="y">
+          <h2>Y</h2>
+        </section>
+        <section id="z">
+          <h2>Z</h2>
+        </section>
+      </div>
+      <nav>
+        <li> <a href="#a">A</a> </li>
+        <li> <a href="#b">B</a> </li>
+        <li> <a href="#c">C</a> </li>
+        <li> <a href="#d">D</a> </li>
+        <li> <a href="#e">E</a> </li>
+        <li> <a href="#f">F</a> </li>
+        <li> <a href="#g">G</a> </li>
+        <li> <a href="#h">H</a> </li>
+        <li> <a href="#i">I</a> </li>
+        <li> <a href="#j">J</a> </li>
+        <li> <a href="#k">K</a> </li>
+        <li> <a href="#l">L</a> </li>
+        <li> <a href="#m">M</a> </li>
+        <li> <a href="#n">N</a> </li>
+        <li> <a href="#o">O</a> </li>
+        <li> <a href="#p">P</a> </li>
+        <li> <a href="#q">Q</a> </li>
+        <li> <a href="#r">R</a> </li>
+        <li> <a href="#s">S</a> </li>
+        <li> <a href="#t">T</a> </li>
+        <li> <a href="#u">U</a> </li>
+        <li> <a href="#v">V</a> </li>
+        <li> <a href="#w">W</a> </li>
+        <li> <a href="#x">X</a> </li>
+        <li> <a href="#y">Y</a> </li>
+        <li> <a href="#z">Z</a> </li>
+      </nav>
+    </main>
+    <script>
+
+      (function(){
+        var searchBar = document.getElementById("inputBackground");
+        var letters = document.querySelectorAll("h2");
+        searchBar.setAttribute('Style', 'display: flex;');
+        for (var i = 0; i < letters.length; i++) {
+          letters[i].setAttribute('Style', 'top: 2.5em;')
+        }
+      })();
+      var searchBar = document.getElementById("contactSearch");
+      searchBar.onkeyup = function(e){
+        var alleLetters = document.querySelectorAll("h2");
+        for (b = 0; b < alleLetters.length; b++) {
+          alleLetters[b].setAttribute('Style', 'display: none;');
+        }
+        var value = e.currentTarget.value;
+        var filteredContacts = [];
+        var contactName = document.querySelectorAll("summary");
+        var contactDetail = document.querySelectorAll("details");
+        for (i = 0; i < contactDetail.length; ++i) {
+          var name = contactName[i].innerHTML.toLowerCase();
+          newName = name.indexOf(value);
+          if (newName < 0) {
+            contactDetail[i].setAttribute('Style', 'display: none;');
+          } else if (newName > -1) {
+            filteredContacts.push(contactDetail[i]);
+          }
+        }
+        for (k = 0; k < filteredContacts.length; ++k) {
+          var letterTabs = document.querySelectorAll("h2");
+          var match = filteredContacts[k].innerText;
+          for (y = 0; y < letterTabs.length; y++) {
+            var matchWith = letterTabs[y].innerText;
+            if (match.substring(0, 1) === matchWith.toString().substring(0, 1)) {
+              letterTabs[y].setAttribute('Style', 'display: block;');
+            }
+          }
+          filteredContacts[k].setAttribute('Style', 'display: block;')
+        }
+        if (value === '') {
+          var resetLetters = document.querySelectorAll('h2');
+          for (z = 0; z < resetLetters.length; z++) {
+            resetLetters[z].setAttribute('Style', 'display: block');
+          }
+        }
+      }
+
+      var filteredContacts = [];
+    </script>
+  </body>
+</html>
