@@ -53,7 +53,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-bottom: 2em;
         width: 75%;
       }
 
@@ -579,7 +578,7 @@
           </details>
         </section>
         <section id="u">
-          <h2>I</h2>
+          <h2>U</h2>
         </section>
         <section id="v">
           <h2>V</h2>
@@ -656,6 +655,10 @@
       })();
       var searchBar = document.getElementById("contactSearch");
       searchBar.onkeyup = function(e){
+        var alleLetters = document.querySelectorAll("h2");
+        for (b = 0; b < alleLetters.length; b++) {
+          alleLetters[b].setAttribute('Style', 'display: none;');
+        }
         var value = e.currentTarget.value;
         var filteredContacts = [];
         var contactName = document.querySelectorAll("summary");
@@ -670,9 +673,24 @@
           }
         }
         for (k = 0; k < filteredContacts.length; ++k) {
+          var letterTabs = document.querySelectorAll("h2");
+          var match = filteredContacts[k].innerText;
+          for (y = 0; y < letterTabs.length; y++) {
+            var matchWith = letterTabs[y].innerText;
+            if (match.substring(0, 1) === matchWith.toString().substring(0, 1)) {
+              letterTabs[y].setAttribute('Style', 'display: block;');
+            }
+          }
           filteredContacts[k].setAttribute('Style', 'display: block;')
         }
+        if (value === '') {
+          var resetLetters = document.querySelectorAll('h2');
+          for (z = 0; z < resetLetters.length; z++) {
+            resetLetters[z].setAttribute('Style', 'display: block');
+          }
+        }
       }
+
       var filteredContacts = [];
     </script>
   </body>
