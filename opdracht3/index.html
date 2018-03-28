@@ -21,6 +21,10 @@
         text-align: center;
       }
 
+      h1 {
+        font-size: 2.5em;
+      }
+
       h2 {
         position: sticky;
         top: 0;
@@ -28,6 +32,7 @@
         margin: 0;
         margin-top: 2em;
         padding: .5em 0;
+        font-size: 2.5em;
       }
 
       main {
@@ -40,6 +45,33 @@
       input {
         padding: .5em .3em;
         width: 70%;
+      }
+
+      summary {
+        font-size: 1.5em;
+        cursor: pointer;
+        padding: .5em 1em;
+        transition: .3s;
+        outline: 0;
+        margin-bottom: 1em;
+      }
+
+      img {
+        max-width: 20vw;
+        border-radius: 50%;
+        margin-left: 35%;
+      }
+
+      summary:hover {
+        box-shadow: 1px 14px 58px -22px rgba(0,0,0,0.75);
+      }
+
+      summary:focus {
+        box-shadow: 1px 14px 58px -22px rgba(0,0,0,0.75);
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
       }
 
       div {
@@ -58,30 +90,40 @@
 
       details {
         margin-top: 1em;
-        margin-left: .5em;
+      }
+
+      details[open] summary ~ * {
+        animation: mooiDing .3 ease-in-out;
       }
 
       nav {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        position: sticky;
-        top: 6em;
-        margin-left: 2em;
-        height: 85%;
-        height: 85vh;
+        position: fixed;
+        top: 1em;
+        right: 2em;
+        z-index: 1000;
       }
 
       li {
         list-style: none;
+        text-align: center;
+      }
+
+      ul > li {
+        margin-bottom: 1em;
+        font-size: 1.25em;
       }
 
       a {
         text-decoration: none;
+        font-size: 3.2vh;
+        color: black;
       }
 
       #inputBackground {
         width: 100%;
+        position: fixed;
         position: sticky;
         top: 0;
         background-color: white;
@@ -90,8 +132,9 @@
         display: none;
       }
 
-      #contactSearch {
-
+      @keyframes mooiDing {
+        0%    {opacity: 0; margin-left: -10px}
+        100%  {opacity: 1; margin-left: 0px}
       }
     </style>
     <header>
@@ -107,29 +150,29 @@
           <h2>A</h2>
           <details>
             <summary>Anne Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Arnold Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Aziz de Boer</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -137,29 +180,29 @@
           <h2>B</h2>
           <details>
             <summary>Bert Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Bob Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Bram de Boer</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -167,29 +210,29 @@
           <h2>C</h2>
           <details>
             <summary>Cas Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Claar Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Coos de Boer</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -197,29 +240,29 @@
           <h2>D</h2>
           <details>
             <summary>Derk Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Dirk Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Dominiek de Boer</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -227,29 +270,29 @@
           <h2>E</h2>
           <details>
             <summary>Ed Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Erik Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Eva de Boer</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -257,29 +300,29 @@
           <h2>F</h2>
           <details>
             <summary>Fernando Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Frank Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Fred de Boer</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -287,29 +330,29 @@
           <h2>G</h2>
           <details>
             <summary>Gee Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Gert Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Greet de Boer</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -317,29 +360,29 @@
           <h2>H</h2>
           <details>
             <summary>Harry Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Henk Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Hord de Boer</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -347,20 +390,20 @@
           <h2>I</h2>
           <details>
             <summary>Ido Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Ivo Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -368,20 +411,20 @@
           <h2>J</h2>
           <details>
             <summary>Jan Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Joost Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -389,20 +432,20 @@
           <h2>K</h2>
           <details>
             <summary>Kas Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Koop Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -410,20 +453,20 @@
           <h2>L</h2>
           <details>
             <summary>Lars Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Lies Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -431,20 +474,20 @@
           <h2>M</h2>
           <details>
             <summary>Mark Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Mitch Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -452,20 +495,20 @@
           <h2>N</h2>
           <details>
             <summary>Naz Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Nico Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -473,20 +516,20 @@
           <h2>O</h2>
           <details>
             <summary>Ollie Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Oscar Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -494,20 +537,20 @@
           <h2>P</h2>
           <details>
             <summary>Pascal Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Peter Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -518,20 +561,20 @@
           <h2>R</h2>
           <details>
             <summary>Robin Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Roos Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -539,20 +582,20 @@
           <h2>S</h2>
           <details>
             <summary>Stan Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Steef Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -560,20 +603,20 @@
           <h2>T</h2>
           <details>
             <summary>Tarik Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
           <details>
             <summary>Tim Slager</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -584,11 +627,11 @@
           <h2>V</h2>
           <details>
             <summary>Vince Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -596,11 +639,11 @@
           <h2>W</h2>
           <details>
             <summary>Willem Bakker</summary>
-            <img src="" alt="">
+            <img src="images/profile.jpg" alt="">
             <ul>
-              <li>Mobiel:</li>
-              <li>Werk:</li>
-              <li>Email:</li>
+              <li>Mobiel: 06-12345678</li>
+              <li>Werk: 020-124434</li>
+              <li>Email: Voorbeeld@contact.nl</li>
             </ul>
           </details>
         </section>
@@ -650,7 +693,7 @@
         var letters = document.querySelectorAll("h2");
         searchBar.setAttribute('Style', 'display: flex;');
         for (var i = 0; i < letters.length; i++) {
-          letters[i].setAttribute('Style', 'top: 2.5em;')
+          letters[i].setAttribute('Style', 'top: 1em;')
         }
       })();
       var searchBar = document.getElementById("contactSearch");
@@ -680,15 +723,16 @@
             if (match.substring(0, 1) === matchWith.toString().substring(0, 1)) {
               letterTabs[y].setAttribute('Style', 'display: block;');
             }
+            if (value === '') {
+              var resetLetters = document.querySelectorAll('h2');
+              for (z = 0; z < resetLetters.length; z++) {
+                resetLetters[z].setAttribute('Style', 'display: block');
+              }
+            }
           }
           filteredContacts[k].setAttribute('Style', 'display: block;')
         }
-        if (value === '') {
-          var resetLetters = document.querySelectorAll('h2');
-          for (z = 0; z < resetLetters.length; z++) {
-            resetLetters[z].setAttribute('Style', 'display: block');
-          }
-        }
+
       }
 
       var filteredContacts = [];
