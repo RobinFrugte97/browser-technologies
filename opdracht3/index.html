@@ -43,8 +43,12 @@
       }
 
       input {
-        padding: .5em .3em;
+        padding: 1.5em 1.3em;
         width: 70%;
+      }
+
+      input::placeholder {
+        font-size: 1.5em;
       }
 
       summary {
@@ -54,6 +58,16 @@
         transition: .3s;
         outline: 0;
         margin-bottom: 1em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      summary > img {
+        max-width: 3em;
+        max-height: 3em;
+        margin-left: 0;
+        margin-right: 1em;
       }
 
       img {
@@ -90,10 +104,7 @@
 
       details {
         margin-top: 1em;
-      }
-
-      details[open] summary ~ * {
-        animation: mooiDing .3 ease-in-out;
+        margin-left: 1.5em;
       }
 
       nav {
@@ -131,11 +142,6 @@
         padding: 1em 0;
         display: none;
       }
-
-      @keyframes mooiDing {
-        0%    {opacity: 0; margin-left: -10px}
-        100%  {opacity: 1; margin-left: 0px}
-      }
     </style>
     <header>
       <h1>Contacts</h1>
@@ -149,7 +155,7 @@
         <section>
           <h2>A</h2>
           <details>
-            <summary>Anne Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Anne Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -158,7 +164,7 @@
             </ul>
           </details>
           <details>
-            <summary>Arnold Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Arnold Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -167,7 +173,7 @@
             </ul>
           </details>
           <details>
-            <summary>Aziz de Boer</summary>
+            <summary><img src="images/profile.jpg" alt="">Aziz de Boer</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -179,7 +185,7 @@
         <section id="b">
           <h2>B</h2>
           <details>
-            <summary>Bert Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Bert Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -188,7 +194,7 @@
             </ul>
           </details>
           <details>
-            <summary>Bob Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Bob Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -197,7 +203,7 @@
             </ul>
           </details>
           <details>
-            <summary>Bram de Boer</summary>
+            <summary><img src="images/profile.jpg" alt="">Bram de Boer</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -209,7 +215,7 @@
         <section id="c">
           <h2>C</h2>
           <details>
-            <summary>Cas Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Cas Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -218,7 +224,7 @@
             </ul>
           </details>
           <details>
-            <summary>Claar Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Claar Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -227,7 +233,7 @@
             </ul>
           </details>
           <details>
-            <summary>Coos de Boer</summary>
+            <summary><img src="images/profile.jpg" alt="">Coos de Boer</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -239,7 +245,7 @@
         <section id="d">
           <h2>D</h2>
           <details>
-            <summary>Derk Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Derk Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -248,7 +254,7 @@
             </ul>
           </details>
           <details>
-            <summary>Dirk Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Dirk Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -257,7 +263,7 @@
             </ul>
           </details>
           <details>
-            <summary>Dominiek de Boer</summary>
+            <summary><img src="images/profile.jpg" alt="">Dominiek de Boer</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -269,7 +275,7 @@
         <section id="e">
           <h2>E</h2>
           <details>
-            <summary>Ed Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Ed Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -278,7 +284,7 @@
             </ul>
           </details>
           <details>
-            <summary>Erik Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Erik Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -287,7 +293,7 @@
             </ul>
           </details>
           <details>
-            <summary>Eva de Boer</summary>
+            <summary><img src="images/profile.jpg" alt="">Eva de Boer</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -299,7 +305,7 @@
         <section id="f">
           <h2>F</h2>
           <details>
-            <summary>Fernando Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Fernando Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -308,7 +314,7 @@
             </ul>
           </details>
           <details>
-            <summary>Frank Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Frank Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -317,7 +323,7 @@
             </ul>
           </details>
           <details>
-            <summary>Fred de Boer</summary>
+            <summary><img src="images/profile.jpg" alt="">Fred de Boer</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -329,7 +335,7 @@
         <section id="g">
           <h2>G</h2>
           <details>
-            <summary>Gee Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Gee Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -338,7 +344,7 @@
             </ul>
           </details>
           <details>
-            <summary>Gert Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Gert Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -347,7 +353,7 @@
             </ul>
           </details>
           <details>
-            <summary>Greet de Boer</summary>
+            <summary><img src="images/profile.jpg" alt="">Greet de Boer</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -359,7 +365,7 @@
         <section id="h">
           <h2>H</h2>
           <details>
-            <summary>Harry Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Harry Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -368,7 +374,7 @@
             </ul>
           </details>
           <details>
-            <summary>Henk Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Henk Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -377,7 +383,7 @@
             </ul>
           </details>
           <details>
-            <summary>Hord de Boer</summary>
+            <summary><img src="images/profile.jpg" alt="">Hord de Boer</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -389,7 +395,7 @@
         <section id="i">
           <h2>I</h2>
           <details>
-            <summary>Ido Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Ido Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -398,7 +404,7 @@
             </ul>
           </details>
           <details>
-            <summary>Ivo Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Ivo Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -410,7 +416,7 @@
         <section id="j">
           <h2>J</h2>
           <details>
-            <summary>Jan Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Jan Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -419,7 +425,7 @@
             </ul>
           </details>
           <details>
-            <summary>Joost Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Joost Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -431,7 +437,7 @@
         <section id="k">
           <h2>K</h2>
           <details>
-            <summary>Kas Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Kas Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -440,7 +446,7 @@
             </ul>
           </details>
           <details>
-            <summary>Koop Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Koop Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -452,7 +458,7 @@
         <section id="l">
           <h2>L</h2>
           <details>
-            <summary>Lars Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Lars Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -461,7 +467,7 @@
             </ul>
           </details>
           <details>
-            <summary>Lies Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Lies Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -473,7 +479,7 @@
         <section id="m">
           <h2>M</h2>
           <details>
-            <summary>Mark Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Mark Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -482,7 +488,7 @@
             </ul>
           </details>
           <details>
-            <summary>Mitch Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Mitch Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -491,10 +497,10 @@
             </ul>
           </details>
         </section>
-        <section id="N">
+        <section id="n">
           <h2>N</h2>
           <details>
-            <summary>Naz Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Naz Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -503,7 +509,7 @@
             </ul>
           </details>
           <details>
-            <summary>Nico Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Nico Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -515,7 +521,7 @@
         <section id="o">
           <h2>O</h2>
           <details>
-            <summary>Ollie Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Ollie Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -524,7 +530,7 @@
             </ul>
           </details>
           <details>
-            <summary>Oscar Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Oscar Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -536,7 +542,7 @@
         <section id="p">
           <h2>P</h2>
           <details>
-            <summary>Pascal Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Pascal Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -545,7 +551,7 @@
             </ul>
           </details>
           <details>
-            <summary>Peter Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Peter Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -560,7 +566,7 @@
         <section id="r">
           <h2>R</h2>
           <details>
-            <summary>Robin Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Robin Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -569,7 +575,7 @@
             </ul>
           </details>
           <details>
-            <summary>Roos Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Roos Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -581,7 +587,7 @@
         <section id="s">
           <h2>S</h2>
           <details>
-            <summary>Stan Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Stan Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -590,7 +596,7 @@
             </ul>
           </details>
           <details>
-            <summary>Steef Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Steef Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -602,7 +608,7 @@
         <section id="t">
           <h2>T</h2>
           <details>
-            <summary>Tarik Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Tarik Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -611,7 +617,7 @@
             </ul>
           </details>
           <details>
-            <summary>Tim Slager</summary>
+            <summary><img src="images/profile.jpg" alt="">Tim Slager</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -626,7 +632,7 @@
         <section id="v">
           <h2>V</h2>
           <details>
-            <summary>Vince Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Vince Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -638,7 +644,7 @@
         <section id="w">
           <h2>W</h2>
           <details>
-            <summary>Willem Bakker</summary>
+            <summary><img src="images/profile.jpg" alt="">Willem Bakker</summary>
             <img src="images/profile.jpg" alt="">
             <ul>
               <li>Mobiel: 06-12345678</li>
@@ -693,7 +699,7 @@
         var letters = document.querySelectorAll("h2");
         searchBar.setAttribute('Style', 'display: flex;');
         for (var i = 0; i < letters.length; i++) {
-          letters[i].setAttribute('Style', 'top: 1em;')
+          letters[i].setAttribute('Style', 'top: 2em;')
         }
       })();
       var searchBar = document.getElementById("contactSearch");
@@ -722,11 +728,13 @@
             var matchWith = letterTabs[y].innerText;
             if (match.substring(0, 1) === matchWith.toString().substring(0, 1)) {
               letterTabs[y].setAttribute('Style', 'display: block;');
+              letterTabs[y].setAttribute('Style', 'top: 2em;')
             }
             if (value === '') {
               var resetLetters = document.querySelectorAll('h2');
               for (z = 0; z < resetLetters.length; z++) {
                 resetLetters[z].setAttribute('Style', 'display: block');
+                resetLetters[z].setAttribute('Style', 'top: 2em;')
               }
             }
           }
