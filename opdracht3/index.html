@@ -694,56 +694,60 @@
     </main>
     <script>
 
+
+
       (function(){
         var searchBar = document.getElementById("inputBackground");
-        var letters = document.querySelectorAll("h2");
+        var letters = document.getElementsByTagName("h2");
         searchBar.setAttribute('Style', 'display: flex;');
         for (var i = 0; i < letters.length; i++) {
-          letters[i].setAttribute('Style', 'top: 2em;')
+          letters[i].setAttribute('Style', 'top: 9vh;')
         }
       })();
-      var searchBar = document.getElementById("contactSearch");
-      searchBar.onkeyup = function(e){
-        var alleLetters = document.querySelectorAll("h2");
-        for (b = 0; b < alleLetters.length; b++) {
-          alleLetters[b].setAttribute('Style', 'display: none;');
-        }
-        var value = e.currentTarget.value;
-        var filteredContacts = [];
-        var contactName = document.querySelectorAll("summary");
-        var contactDetail = document.querySelectorAll("details");
-        for (i = 0; i < contactDetail.length; ++i) {
-          var name = contactName[i].innerHTML.toLowerCase();
-          newName = name.indexOf(value);
-          if (newName < 0) {
-            contactDetail[i].setAttribute('Style', 'display: none;');
-          } else if (newName > -1) {
-            filteredContacts.push(contactDetail[i]);
+      if (document.querySelectorAll) {
+        var searchBar = document.getElementById("contactSearch");
+        searchBar.onkeyup = function(e){
+          var alleLetters = document.querySelectorAll("h2");
+          for (b = 0; b < alleLetters.length; b++) {
+            alleLetters[b].setAttribute('Style', 'display: none;');
           }
-        }
-        for (k = 0; k < filteredContacts.length; ++k) {
-          var letterTabs = document.querySelectorAll("h2");
-          var match = filteredContacts[k].innerText;
-          for (y = 0; y < letterTabs.length; y++) {
-            var matchWith = letterTabs[y].innerText;
-            if (match.substring(0, 1) === matchWith.toString().substring(0, 1)) {
-              letterTabs[y].setAttribute('Style', 'display: block;');
-              letterTabs[y].setAttribute('Style', 'top: 2em;')
+          var value = e.currentTarget.value;
+          var filteredContacts = [];
+          var contactName = document.querySelectorAll("summary");
+          var contactDetail = document.querySelectorAll("details");
+          for (i = 0; i < contactDetail.length; ++i) {
+            var name = contactName[i].innerHTML.toLowerCase();
+            newName = name.indexOf(value);
+            if (newName < 0) {
+              contactDetail[i].setAttribute('Style', 'display: none;');
+            } else if (newName > -1) {
+              filteredContacts.push(contactDetail[i]);
             }
-            if (value === '') {
-              var resetLetters = document.querySelectorAll('h2');
-              for (z = 0; z < resetLetters.length; z++) {
-                resetLetters[z].setAttribute('Style', 'display: block');
-                resetLetters[z].setAttribute('Style', 'top: 2em;')
+          }
+          for (k = 0; k < filteredContacts.length; ++k) {
+            var letterTabs = document.querySelectorAll("h2");
+            var match = filteredContacts[k].innerText;
+            for (y = 0; y < letterTabs.length; y++) {
+              var matchWith = letterTabs[y].innerText;
+              if (match.substring(0, 1) === matchWith.toString().substring(0, 1)) {
+                letterTabs[y].setAttribute('Style', 'display: block;');
+                letterTabs[y].setAttribute('Style', 'top: 2em;')
+              }
+              if (value === '') {
+                var resetLetters = document.querySelectorAll('h2');
+                for (z = 0; z < resetLetters.length; z++) {
+                  resetLetters[z].setAttribute('Style', 'display: block');
+                  resetLetters[z].setAttribute('Style', 'top: 2em;')
+                }
               }
             }
+            filteredContacts[k].setAttribute('Style', 'display: block;')
           }
-          filteredContacts[k].setAttribute('Style', 'display: block;')
+
         }
 
+        var filteredContacts = [];
       }
-
-      var filteredContacts = [];
     </script>
   </body>
 </html>
