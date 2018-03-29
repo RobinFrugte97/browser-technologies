@@ -709,7 +709,7 @@
         searchBar.onkeyup = function(e){
           var alleLetters = document.querySelectorAll("h2");
           for (b = 0; b < alleLetters.length; b++) {
-            alleLetters[b].setAttribute('Style', 'display: none;');
+            alleLetters[b].hidden = true;
           }
           var value = e.currentTarget.value;
           var filteredContacts = [];
@@ -719,7 +719,7 @@
             var name = contactName[i].innerHTML.toLowerCase();
             newName = name.indexOf(value);
             if (newName < 0) {
-              contactDetail[i].setAttribute('Style', 'display: none;');
+              contactDetail[i].hidden = true;
             } else if (newName > -1) {
               filteredContacts.push(contactDetail[i]);
             }
@@ -730,18 +730,18 @@
             for (y = 0; y < letterTabs.length; y++) {
               var matchWith = letterTabs[y].innerText;
               if (match.substring(0, 1) === matchWith.toString().substring(0, 1)) {
-                letterTabs[y].setAttribute('Style', 'display: block;');
+                letterTabs[y].hidden = false;
                 letterTabs[y].setAttribute('Style', 'top: 2em;')
               }
               if (value === '') {
                 var resetLetters = document.querySelectorAll('h2');
                 for (z = 0; z < resetLetters.length; z++) {
-                  resetLetters[z].setAttribute('Style', 'display: block');
+                  resetLetters[z].hidden = false;
                   resetLetters[z].setAttribute('Style', 'top: 2em;')
                 }
               }
             }
-            filteredContacts[k].setAttribute('Style', 'display: block;')
+            filteredContacts[k].hidden = false;
           }
 
         }
